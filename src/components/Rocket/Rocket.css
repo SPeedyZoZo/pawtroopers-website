@@ -1,0 +1,27 @@
+.rocket-container {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform-origin: center bottom;
+    min-width: 128px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: vibrating 1s alternate infinite ease-in-out;
+  }
+  
+  .rocket-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @keyframes vibrating {
+    0% {
+      transform: translateX(-50%) translateY(-5%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(5%);
+    }
+  }
+  

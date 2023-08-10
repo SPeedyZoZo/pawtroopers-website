@@ -1,0 +1,22 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-36%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+  }
+  
+  .logo-container.visible {
+    opacity: 1;
+  }
+  
+  .logo-image {
+    width: 100vw;
+    max-width: 600px;
+  }
+  
