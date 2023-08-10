@@ -1,8 +1,14 @@
-# React + Vite
+# Paw Troopers Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the official Paw Troopers website source code.
 
-Currently, two official plugins are available:
+## Changelog:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### v1.0.0
+
+- Created Paw Troopers website with:
+  - Logo
+  - Download button with associated coming soon message in a pop up
+  - Rocket travelling through space
+  - Effects
+- Website published to pawtroopers.netreviews.ai
