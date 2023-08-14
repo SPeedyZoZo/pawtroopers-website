@@ -1,38 +1,40 @@
+// DownloadButton.js
+
 import React, { useState, useEffect } from 'react';
 import './DownloadButton.css';
 
 const DownloadButton = () => {
-  const [showPopup, setShowPopup] = useState(false);
-  const [showButton, setShowButton] = useState(false);
+  const [showDownloadPopup, setShowDownloadPopup] = useState(false);
+  const [showDownloadButton, setShowDownloadButton] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowButton(true);
+      setShowDownloadButton(true);
     }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
 
   const handleDownloadClick = () => {
-    setShowPopup(true);
+    setShowDownloadPopup(true);
   };
 
-  const closePopup = () => {
-    setShowPopup(false);
+  const closeDownloadPopup = () => {
+    setShowDownloadPopup(false);
   };
 
   return (
     <div className="download-button-container">
-      {showButton && (
+      {showDownloadButton && (
         <button className="download-button" onClick={handleDownloadClick}>
           Download Now
         </button>
       )}
-      {showPopup && (
-        <div className="popup">
+      {showDownloadPopup && (
+        <div className="popup visible">
           <div className="popup-content">
             <p>Coming Soon!</p>
-            <button className="close-button" onClick={closePopup}>
+            <button className="close-button" onClick={closeDownloadPopup}>
               Close
             </button>
           </div>
